@@ -28,7 +28,7 @@ public class TestKillBillMariaDbDataSource {
     public void testUpdateUrl() throws Exception {
         final KillBillMariaDbDataSource killBillMariaDbDataSource = new KillBillMariaDbDataSource();
 
-        Assert.assertEquals(killBillMariaDbDataSource.buildUpdatedUrl("jdbc:mysql://127.0.0.1:3306/killbill?createDatabaseIfNotExist=true&allowMultiQueries=true&cachePrepStmts=false"),
+        Assert.assertEquals(killBillMariaDbDataSource.buildUpdatedUrl("Xjdbc:mysql://127.0.0.1:3306/killbill?createDatabaseIfNotExist=true&allowMultiQueries=true&cachePrepStmts=false"),
                             "jdbc:mysql://127.0.0.1:3306/killbill?allowMultiQueries=true&cachePrepStmts=false&createDatabaseIfNotExist=true&permitMysqlScheme=true");
         Assert.assertEquals(killBillMariaDbDataSource.buildUpdatedUrl("jdbc:mysql://127.0.0.1:3306/killbill"),
                             "jdbc:mysql://127.0.0.1:3306/killbill?permitMysqlScheme=true");

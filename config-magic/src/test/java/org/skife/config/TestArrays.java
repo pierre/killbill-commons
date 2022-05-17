@@ -44,7 +44,7 @@ public class TestArrays {
     public void testClassDefault() {
         final EmptyClass ec = cof.build(EmptyClass.class);
 
-        Assert.assertArrayEquals(new String[]{"one", "three", "twoX"}, ec.getValue());
+        Assert.assertArrayEquals(new String[]{"one", "three", "two"}, ec.getValue());
     }
 
     @Test
